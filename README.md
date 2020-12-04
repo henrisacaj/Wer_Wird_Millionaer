@@ -1,1 +1,1 @@
-# Wer wird Million‰r
+# Wer wird Million√§r
