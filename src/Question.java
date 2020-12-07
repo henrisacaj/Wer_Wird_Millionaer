@@ -4,9 +4,9 @@ public class Question {
 	private String question;
 	private int difficulty;
 	private List<String> answers;
-	private char correctAnswer;
+	private String correctAnswer;
 	
-	public Question(String question, int difficulty, List<String> answers, char correctAnswer) {
+	public Question(String question, int difficulty, List<String> answers, String correctAnswer) {
 		this.question = question;
 		this.difficulty = difficulty;
 		this.answers = answers;
@@ -29,11 +29,11 @@ public class Question {
 		this.answers = answers;
 	}
 
-	public char getCorrectAnswer() {
+	public String getCorrectAnswer() {
 		return correctAnswer;
 	}
 
-	public void setAnsw(char correctAnswer) {
+	public void setAnsw(String correctAnswer) {
 		this.correctAnswer = correctAnswer;
 	}
 
