@@ -5,6 +5,7 @@ public class Game {
 	
 	Scanner scan = new Scanner(System.in);
 	List<Question> allQuestions = new ArrayList<>();
+	Random random = new Random();
 	
 	
 	List<Question> getAllQuestions(){
@@ -135,8 +136,10 @@ public class Game {
 		List<Question> allQuestions = getAllQuestions();
 		init(allQuestions);
 	
-		//startGame
-		System.out.println("startGame");
+		int currentDifficulty = 1;
+		Question currentQuestion = getRandomQuestion(getQuestionsByDifficulty(currentDifficulty));
+		String currentQuestionText = currentQuestion.getQuestion();
+		System.out.println(currentQuestionText);
 		
 	}
 			
@@ -186,6 +189,23 @@ public class Game {
 			}
 		}
 		return answerIsYes;
+	}
+	
+	List<Question> getQuestionsByDifficulty(int currentDifficulty) {
+		
+		List<Question> questionsWithCurrentDifficulty = new ArrayList<>();
+		
+		for(int i = 0; i < allQuestions.size(); i++) {
+			if(allQuestions.get(i).getDifficulty() == currentDifficulty) {
+				questionsWithCurrentDifficulty.add(allQuestions.get(i));
+			}
+		}
+		return questionsWithCurrentDifficulty;
+	}
+	
+	
+	Question getRandomQuestion(List<Question> questions) {	
+		return questions.get(random.nextInt(questions.size()));
 	}
 	
 }
