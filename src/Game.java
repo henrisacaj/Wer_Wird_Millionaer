@@ -140,6 +140,8 @@ public class Game {
 		Question currentQuestion = getRandomQuestion(getQuestionsByDifficulty(currentDifficulty));
 		String currentQuestionText = currentQuestion.getQuestion();
 		System.out.println(currentQuestionText);
+		showAnswers(currentQuestion);
+		
 		
 	}
 			
@@ -206,6 +208,51 @@ public class Game {
 	
 	Question getRandomQuestion(List<Question> questions) {	
 		return questions.get(random.nextInt(questions.size()));
+	}
+	
+	
+	void showAnswers(Question currentQuestion) {
+		
+		List<String> currentAnswers =  currentQuestion.getAnswers();
+		
+		for(int i = 0; i < currentAnswers.size(); i++) {			
+			
+			switch(i) {
+			case 0:
+				System.out.println("A: " + currentAnswers.get(i));
+				break;
+			case 1:
+				System.out.println("B: " + currentAnswers.get(i));
+				break;
+			case 2:
+				System.out.println("C: " + currentAnswers.get(i));
+				break;
+			case 3:
+				System.out.println("D: " + currentAnswers.get(i));
+				break;
+			case 4:
+				System.out.println("E: " + currentAnswers.get(i));
+				break;
+			case 5:
+				System.out.println("F: " + currentAnswers.get(i));
+				break;
+			case 6:
+				System.out.println("G: " + currentAnswers.get(i));
+				break;
+			case 7:
+				System.out.println("H: " + currentAnswers.get(i));
+				break;
+			case 8:
+				System.out.println("I: " + currentAnswers.get(i));
+				break;
+			case 9:
+				System.out.println("J: " + currentAnswers.get(i));
+				break;				
+			}
+
+		}
+				
+
 	}
 	
 }
