@@ -230,24 +230,6 @@ public class Game {
 			case 3:
 				System.out.println("D: " + currentAnswers.get(i));
 				break;
-			case 4:
-				System.out.println("E: " + currentAnswers.get(i));
-				break;
-			case 5:
-				System.out.println("F: " + currentAnswers.get(i));
-				break;
-			case 6:
-				System.out.println("G: " + currentAnswers.get(i));
-				break;
-			case 7:
-				System.out.println("H: " + currentAnswers.get(i));
-				break;
-			case 8:
-				System.out.println("I: " + currentAnswers.get(i));
-				break;
-			case 9:
-				System.out.println("J: " + currentAnswers.get(i));
-				break;				
 			}
 
 		}
