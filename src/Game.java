@@ -135,12 +135,19 @@ public class Game {
 		
 		List<Question> allQuestions = getAllQuestions();
 		init(allQuestions);
-	
-		int currentDifficulty = 1;
-		Question currentQuestion = getRandomQuestion(getQuestionsByDifficulty(currentDifficulty));
-		String currentQuestionText = currentQuestion.getQuestion();
-		System.out.println(currentQuestionText);
-		showAnswers(currentQuestion);
+
+		for (int currentDifficulty = 1; currentDifficulty < 15; currentDifficulty++){
+
+			Question currentQuestion = getRandomQuestion(getQuestionsByDifficulty(currentDifficulty));
+			String currentQuestionText = currentQuestion.getQuestion();
+			System.out.println(currentQuestionText);
+			System.out.println();
+			showAnswers(currentQuestion);
+			System.out.println();
+			int userAnswer = getUserAnswer();
+			if(userAnswer == currentQuestion.getCorrectAnswer());
+			else break;
+		}
 		
 		
 	}
