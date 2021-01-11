@@ -145,8 +145,12 @@ public class Game {
 			showAnswers(currentQuestion);
 			System.out.println();
 			int userAnswer = getUserAnswer();
-			if(userAnswer == currentQuestion.getCorrectAnswer());
-			else break;
+			if(userAnswer == currentQuestion.getCorrectAnswer()){
+				System.out.println("Deine Antwort war richtig!");
+			} else {
+				System.out.println("Deine Antwort war falsch! Du hast das Spiel verloren!");
+				break;
+			}
 		}
 		
 		
