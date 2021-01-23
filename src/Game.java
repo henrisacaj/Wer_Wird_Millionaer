@@ -528,11 +528,34 @@ public class Game {
                 answerIndex = 3;
                 inputValid = true;
                 break;
+            case 'q':
+                answerIndex = 4;
+                inputValid = true;
+                break;
+            case 'A':
+                answerIndex = 0;
+                inputValid = true;
+                break;
+            case 'B':
+                answerIndex = 1;
+                inputValid = true;
+                break;
+            case 'C':
+                answerIndex = 2;
+                inputValid = true;
+                break;
+            case 'D':
+                answerIndex = 3;
+                inputValid = true;
+                break;
+            case 'Q':
+                answerIndex = 4;
+                inputValid = true;
+                break;
             default:
                 answerIndex = -1;
                 inputValid = false;
                 break;
-
             }
 
         }
