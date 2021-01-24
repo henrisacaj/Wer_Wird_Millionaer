@@ -106,7 +106,7 @@ public class Game {
                 2));
         allQuestions.add(new Question("Was machte 2006 Klinsi mit Woerns?", 5,
                 Arrays.asList(
-                        new String[] { "zur�ckrudern", "einschiffen", "ausbooten", "auftakeln" }),
+                        new String[] { "zurueckrudern", "einschiffen", "ausbooten", "auftakeln" }),
                 2));
         allQuestions.add(new Question(
                 "In der Vorweihnachtszeit beschenkt man sich anonym beim ...?", 5,
@@ -376,15 +376,21 @@ public class Game {
 
     void start() {
 
-        String welcomeText = "Herzlich Willkommen bei \"Wer wird Millionï¿½r\"!";
-        String tutorialText = "xyz. Bist du bereit? Dann drï¿½cke bitte die Taste \"j\".";
+        String welcomeText = "Herzlich Willkommen bei \"Wer wird Millionaer\"!";
+        String tutorialText = "Bei diesem Spiel geht es darum einen möglichst hohen Geldbetrag zu gewinnen. Dafür musst du Fragen beantworten, die im Schwierigkeitsgrad ansteigen. \n"
+                + "Dir wird in jedem Schwierigkeitsgrad eine Frage und die vier dazu gehörigen Antwortmöglichkeiten angezeigt. \n"
+                + "Um eine Antwortmöglichkeit zu wählen, gebe den Buchstaben, der vor der jeweiligen Antwort steht ein. \n"
+                + "Waehlst du die richtige Antwort, steigt der gewonnene Geldbetrag, aber auch der Schwiergkeitsgrad an. \n"
+                + "Waehlst du die falsche Antwort, fällst du auf eine der Sicherheitsstufen zurück und gewinnst nur den den Wert der Sicherheitsstufe (500€ oder 16000€) \n"
+                + "Um das zu verhindern kannst du das Spiel durch Eingeben von \"q\" verlassen, um den Geldbetrag der zuletzt richtig beantworteten Frage zu behalten. \n"
+                + "Bist du bereit? Dann druecke bitte die Taste \"j\".";
 
         showMessage(welcomeText);
 
         String name = getName();
 
         String askShouldShowTutorial = "Hallo " + name
-                + ", bist du bereit? Wenn du ein kleines Tutorial brauchst, drï¿½cke bitte die Taste \"j\". Ansonsten geht es mit \"n\" mit der ersten Frage los!";
+                + ", bist du bereit? Wenn du ein kleines Tutorial brauchst, druecke bitte die Taste \"j\". Ansonsten geht es mit \"n\" mit der ersten Frage los!";
         showMessage(askShouldShowTutorial);
 
         boolean showTutorial = getYesNoFromUser();
