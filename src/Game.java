@@ -404,11 +404,12 @@ public class Game {
         init(allQuestions);
 
         for (int currentDifficulty = 1; currentDifficulty < 15; currentDifficulty++) {
-
+            int[] cashPrizes = {50, 100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000,
+                    32000, 64000, 125000, 500000, 1000000};
             Question currentQuestion = getRandomQuestion(
                     getQuestionsByDifficulty(currentDifficulty));
             String currentQuestionText = currentQuestion.getQuestion();
-            System.out.println(currentQuestionText);
+            System.out.println("Du bist jetzt bei der " + cashPrizes[currentDifficulty-1] + "€ Frage. \n" + currentQuestionText);
             System.out.println();
             showAnswers(currentQuestion);
             System.out.println();
