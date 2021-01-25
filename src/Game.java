@@ -414,11 +414,24 @@ public class Game {
             showAnswers(currentQuestion);
             System.out.println();
             int userAnswer = getUserAnswer();
-            if (userAnswer == currentQuestion.getCorrectAnswer()) {
-                System.out.println("Deine Antwort war richtig!");
-            } else {
-                System.out.println("Deine Antwort war falsch! Du hast das Spiel verloren!");
+            int quit = 4;
+            if(userAnswer == currentQuestion.getCorrectAnswer()){
+                if(currentDifficulty == 15) System.out.println("Herzlichen Glueckwunsch! Du bist jetzt ein virtueller Millionaer.");
+                else System.out.println("Deine Antwort war richtig! Die gewonnene Summe liegt bei " + cashPrizes[currentDifficulty - 1] + "€.");
+            } else if(userAnswer == quit){
+                System.out.println("Du hast aufgegeben! Die gewonnene Summe liegt bei " + cashPrizes[currentDifficulty - 2] + "€.");
                 break;
+            } else {
+                if(currentDifficulty<=5) {
+                    System.out.println("Deine Antwort war falsch! Die gewonnene Summe liegt bei 0 €.");
+                    break;
+                }  else if(currentDifficulty<=10){
+                    System.out.println("Deine Antwort war falsch! Die gewonnene Summe liegt bei " + cashPrizes[4]  +"€!");
+                    break;
+                } else {
+                    System.out.println("Deine Antwort war falsch! Die gewonnene Summe liegt bei " + cashPrizes[9]  +"€!");
+                    break;
+                }
             }
         }
 
