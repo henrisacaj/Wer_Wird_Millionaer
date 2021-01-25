@@ -89,7 +89,7 @@ public class Game {
                         "Anwaltsstuben", "Managerbuden", "Aertzekammern", "Pilotenkabuffs" }), 2));
         allQuestions.add(
                 new Question("Was gibt es in vielen Skigebieten?", 4, Arrays.asList(new String[] {
-                        "Trottelberg", "Deppenschanze", "Idiotenh�gel", "Schwachmatenpiste" }), 2));
+                        "Trottelberg", "Deppenschanze", "Idiotenhuegel", "Schwachmatenpiste" }), 2));
         allQuestions
                 .add(new Question("Kaum hatte das Milchgeschaeft geoeffnet, wollte schon der ...?",
                         4, Arrays.asList(new String[] { "Absolute Spitze", "Voll der Hammer",
@@ -409,7 +409,7 @@ public class Game {
             Question currentQuestion = getRandomQuestion(
                     getQuestionsByDifficulty(currentDifficulty));
             String currentQuestionText = currentQuestion.getQuestion();
-            System.out.println("Du bist jetzt bei der " + cashPrizes[currentDifficulty-1] + "€ Frage. \n" + currentQuestionText);
+            System.out.println("Du bist jetzt bei der " + cashPrizes[currentDifficulty-1] + "€ Frage. \n\n" + currentQuestionText);
             System.out.println();
             showAnswers(currentQuestion);
             System.out.println();
