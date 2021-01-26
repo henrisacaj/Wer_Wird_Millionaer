@@ -479,9 +479,14 @@ public class Game {
               + cashPrizes[currentDifficulty - 1] + "€.");
         }  
       } else if (userAnswer == quit) {
-        System.out.println("Du hast aufgegeben! Die gewonnene Summe liegt bei "
-            + cashPrizes[currentDifficulty - 2] + "€.");
-        break;
+        if (currentDifficulty == 1) {
+          System.out.println("Du hast aufgegeben! Die gewonnene Summe liegt bei 0€.");
+          break;
+        } else {
+          System.out.println("Du hast aufgegeben! Die gewonnene Summe liegt bei "
+              + cashPrizes[currentDifficulty - 2] + "€.");
+          break;
+        }  
       } else {
         if (currentDifficulty <= 5) {
           System.out
