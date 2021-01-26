@@ -124,7 +124,7 @@ public class Game {
     allQuestions.add(new Question(
         "In der Vorweihnachtszeit beschenkt man sich anonym beim ...?", 5,
         Arrays.asList(
-            new String[] { "Zwergeln", "Gnomeln", "Maedchen Rosemarie", "Superweib" }),
+            new String[] { "Zwergeln", "Gnomeln", "Wichteln", "Elfeln" }),
         2));
     allQuestions.add(new Question(
         "Die Geschichte des Mordfalls Nitribitt wurde 1958 erstmals verfilmt als \"Das ...\"?",
@@ -428,7 +428,7 @@ public class Game {
         + "gewinnen. Dafür musst du Fragen beantworten, die im Schwierigkeitsgrad ansteigen. \n"
         + "Dir wird in jedem Schwierigkeitsgrad eine Frage und die vier dazu gehörigen "
         + "Antwortmöglichkeiten angezeigt. \n"
-        + "Um eine Antwortmöglichkeit zu wählen, gebe den Buchstaben, der vor der jeweiligen"
+        + "Um eine Antwortmöglichkeit zu wählen, gebe den Buchstaben, der vor der jeweiligen "
         + "Antwort steht ein. \n"
         + "Waehlst du die richtige Antwort, steigt der gewonnene Geldbetrag, aber auch der "
         + "Schwiergkeitsgrad an. \n"
