@@ -1,4 +1,8 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
 
 public class Game {
 
@@ -70,7 +74,8 @@ public class Game {
             "Megabugging-Werkzeug", "Mikrobugging-Dienst" }),
         0));
     allQuestions.add(new Question(
-        "Sieht der Trainer vom Einsatz eines angeschlagenen Spielers zurzeit lieber ab, ist dieser sozusagen nicht in...?",
+        "Sieht der Trainer vom Einsatz eines angeschlagenen Spielers zurzeit lieber ab, ist dieser "
+        + "sozusagen nicht in...?",
         3, Arrays.asList(new String[] { "Bratpfanne", "Suppenkessel", "Schnellkochtopf",
             "Auflaufform" }),
         3));
@@ -127,7 +132,8 @@ public class Game {
             "Maedchen Rosemarie", "Superweib" }),
         2));
     allQuestions.add(new Question(
-        "Welcher 1983 veroeffentlichte Song ist passenderweise in der RTL-Serie \"Deutschland 83\" zu hoeren?",
+        "Welcher 1983 veroeffentlichte Song ist passenderweise in der RTL-Serie \"Deutschland 83\" "
+        + "zu hoeren?",
         5, Arrays.asList(new String[] { "Duesenjet nach Steglitz",
             "Trabbi nach Neukoelln", "Sonderzug nach Pankow", "Reisebus nach Spandau" }),
         2));
@@ -139,7 +145,8 @@ public class Game {
             "Dichtung und Wahrheit", "Stoepsel und Wirklichkeit" }),
         2));
     allQuestions.add(new Question(
-        "Das KFZ-Kennzeichenkuerzel welcher Landeshauptstadt findet man nicht als Symbol eines chemischen Elements?",
+        "Das KFZ-Kennzeichenkuerzel welcher Landeshauptstadt findet man nicht als Symbol eines "
+        + "chemischen Elements?",
         6,
         Arrays.asList(new String[] { "Hannover", "Duesseldorf", "Stuttgart", "Potsdam" }),
         1));
@@ -154,7 +161,8 @@ public class Game {
         6, Arrays.asList(new String[] { "Blinken", "Schalten", "Kuppeln", "Abwuergen" }),
         2));
     allQuestions.add(new Question(
-        "In welcher Sendung kamen unter anderem Jeanette Biedermann, Mark Forster und Lena Meyer-Landrut ins Tauschgeschaeft?",
+        "In welcher Sendung kamen unter anderem Jeanette Biedermann, Mark Forster und Lena "
+        + "Meyer-Landrut ins Tauschgeschaeft?",
         6, Arrays.asList(new String[] { "Sing meinen Song", "Koch mein Leibgericht",
             "Verfuehr meine Frau", "Bewohn mein Haus" }),
         0));
@@ -184,11 +192,13 @@ public class Game {
             new String[] { "Hornbrillen", "Oelgemaelde", "Tankanzeige", "Fahrraeder" }),
         3));
     allQuestions.add(new Question(
-        "Wer gewann 2015 als erster Deutscher seit zwoelf Jahren wieder ein Springen der Vierschanzentournee?",
+        "Wer gewann 2015 als erster Deutscher seit zwoelf Jahren wieder ein Springen der "
+        + "Vierschanzentournee?",
         7, Arrays.asList(new String[] { "Montag", "Dienstag", "Donnerstag", "Freitag" }),
         3));
     allQuestions.add(new Question(
-        "Was mancher selbst im nuechternen Zustand nicht hinbekommt: Korrekt schreibt sich der beliebte Cocktail ...?",
+        "Was mancher selbst im nuechternen Zustand nicht hinbekommt: Korrekt schreibt sich der "
+        + "beliebte Cocktail ...?",
         7, Arrays.asList(
             new String[] { "Caipirinja", "Cajpirinha", "Caipirinha", "Caijpiriña" }),
         2));
@@ -211,13 +221,15 @@ public class Game {
                     "Mascara & Lidschatten", "Freunde & Bekannte", "Sofa & Sessel" }),
                 2));
     allQuestions.add(new Question(
-        "Den Andenbaeren, die einzigen suedamerikanische Baerenart, kennt man auch unter der Bezeichnung ...?",
+        "Den Andenbaeren, die einzigen suedamerikanische Baerenart, kennt man auch unter der "
+        + "Bezeichnung ...?",
         8,
         Arrays.asList(
             new String[] { "Toupetbaer", "Brillenbaer", "Gebissbaer", "Hoergeraetbaer" }),
         1));
     allQuestions.add(new Question(
-        "Wobei wird vor einem sogenannten Rebound-Effekt gewarnt, der nicht selten zu einer Abhaengigkeit fuehrt?",
+        "Wobei wird vor einem sogenannten Rebound-Effekt gewarnt, der nicht selten zu einer "
+        + "Abhaengigkeit fuehrt?",
         8, Arrays.asList(
             new String[] { "Haarspray", "Nasenspray", "Deospray", "Pfefferspray" }),
         1));
@@ -239,7 +251,8 @@ public class Game {
             "Geburtsjahr 1978", "irische Staatsbuergerschaft" }),
         0));
     allQuestions.add(new Question(
-        "Wie heisst der aktuelle Abenteuer-Kinofilm mit Jake Gyllenhaal und Josh Brolin in den Hauptrollen?",
+        "Wie heisst der aktuelle Abenteuer-Kinofilm mit Jake Gyllenhaal und Josh Brolin in den "
+        + "Hauptrollen?",
         9,
         Arrays.asList(
             new String[] { "Mississippi", "Everest", "Sahara", "Lueneburger Heide" }),
@@ -257,7 +270,8 @@ public class Game {
             "das macht dick", "Leckermaeulchen" }),
         1));
     allQuestions.add(new Question(
-        "Welcher Buchstabe kam in der Entstehungsgeschichte unseres heute gebraeuchlichen Alphabets erst im Mittelalter hinzu?",
+        "Welcher Buchstabe kam in der Entstehungsgeschichte unseres heute gebraeuchlichen "
+        + "Alphabets erst im Mittelalter hinzu?",
         10, Arrays.asList(new String[] { "C", "D", "W", "V" }), 2));
     allQuestions.add(new Question(
         "Welche beiden Staaten einigten sich Ende 2012 ueber die Festsetzung eines Grenzverlaufs?",
@@ -265,11 +279,13 @@ public class Game {
             "Daenemark & Kanada", "Oesterreich & Japan" }),
         2));
     allQuestions.add(new Question(
-        "Welche Jahreszeit beginnt bei uns, wenn die Mittagssonne am suedlichen Wendekreis im Zenit steht?",
+        "Welche Jahreszeit beginnt bei uns, wenn die Mittagssonne am suedlichen Wendekreis im Zenit"
+        + " steht?",
         10, Arrays.asList(new String[] { "Fruehling", "Sommer", "Herbst", "Winter" }),
         3));
     allQuestions.add(new Question(
-        "Alfred Gislason ist seit Februar 2020 bereits der zweite Islaender im Amt des deutschen Maenner-Nationaltrainers im ...?",
+        "Alfred Gislason ist seit Februar 2020 bereits der zweite Islaender im Amt des deutschen "
+        + "Maenner-Nationaltrainers im ...?",
         10,
         Arrays.asList(new String[] { "Basketball", "Volleyball", "Handball", "Tennis" }),
         2));
@@ -291,14 +307,16 @@ public class Game {
         11, Arrays.asList(new String[] { "Angelika", "Dagmar", "Baerbel", "Marion" }),
         0));
     allQuestions.add(new Question(
-        "Das fuer die Nahrungsmittelindustrie interessante Stevia, benannt nach der gleichnamigen Pflanze, ist bis zu 300-mal...?",
+        "Das fuer die Nahrungsmittelindustrie interessante Stevia, benannt nach der gleichnamigen "
+        + "Pflanze, ist bis zu 300-mal...?",
         11, Arrays.asList(new String[] { "saurer als Essig", "schaerfer als Pfeffer",
             "suesser als Zucker", "salziger als Salz" }),
         2));
 
     // 64000€ Fragen
     allQuestions.add(new Question(
-        "Wo wurde der Schriftsteller geboren, der fuer den Roman Herkunft 2019 mit dem Deutschen Buchpreis ausgezeichnet wurde?",
+        "Wo wurde der Schriftsteller geboren, der fuer den Roman Herkunft 2019 mit dem Deutschen "
+        + "Buchpreis ausgezeichnet wurde?",
         12, Arrays.asList(new String[] { "Rhodesien", "Jugoslawien", "Ceylon", "Tibet" }),
         1));
     allQuestions.add(new Question(
@@ -334,7 +352,8 @@ public class Game {
                 new String[] { "Pimpernuss", "Zaubernuss", "Wassernuss", "Buchnuss" }),
             3));
     allQuestions.add(new Question(
-        "Korn darf laut Verordnung ueber bestimmte alkoholfreie Getraenke destilliert werden aus Weizen, Gerste, Hafer, Roggen oder...?",
+        "Korn darf laut Verordnung ueber bestimmte alkoholfreie Getraenke destilliert werden aus "
+        + "Weizen, Gerste, Hafer, Roggen oder...?",
         13, Arrays.asList(new String[] { "Mais", "Buchweizen", "Dinkel", "Hirse" }), 1));
     allQuestions
         .add(
@@ -348,12 +367,14 @@ public class Game {
 
     // 500000€ Fragen
     allQuestions.add(new Question(
-        "Das naturgegebene Schicksal welcher Pflanzen sieht vor, dass die Bluete bei den meisten Arten unweigerlich zu ihrem Tod fuehrt?",
+        "Das naturgegebene Schicksal welcher Pflanzen sieht vor, dass die Bluete bei den meisten "
+        + "Arten unweigerlich zu ihrem Tod fuehrt?",
         14,
         Arrays.asList(new String[] { "Bambus", "Ginkgo", "Rhododendron", "Eukalyptus" }),
         0));
     allQuestions.add(new Question(
-        "Auf dem Gelaende, wo Alfred Nobel eine Sprengstofffabrik baute und das Dynamit erfand, steht heute das ...?",
+        "Auf dem Gelaende, wo Alfred Nobel eine Sprengstofffabrik baute und das Dynamit erfand, "
+        + "steht heute das ...?",
         14, Arrays.asList(new String[] { "Kernkraftwerk Kruemmel", "Wembley-Stadion",
             "Europaparlament", "Atomium" }),
         0));
@@ -374,10 +395,12 @@ public class Game {
 
     // 1000000€ Fragen
     allQuestions.add(new Question(
-        "Die klassische genormte Europalette EPAL 1 besteht aus 78 Naegeln, neuen Kloetzen und insgesamt wie vielen Brettern?",
+        "Die klassische genormte Europalette EPAL 1 besteht aus 78 Naegeln, neuen Kloetzen und "
+        + "insgesamt wie vielen Brettern?",
         15, Arrays.asList(new String[] { "Neun", "Zehn", "Elf", "Zwoelf" }), 2));
     allQuestions.add(new Question(
-        "Welche Hoechstgeschwindigkeit erreichte Felix Baumgartner bei seinem Fallschirmsprung aus der Stratosphaere im Oktober 2012?",
+        "Welche Hoechstgeschwindigkeit erreichte Felix Baumgartner bei seinem Fallschirmsprung aus "
+        + "der Stratosphaere im Oktober 2012?",
         15, Arrays.asList(new String[] { "1.011,2 km/h", "1.225,4 km/h", "1.357,6 km/h",
             "1.483,8 km/h" }),
         2));
@@ -387,7 +410,8 @@ public class Game {
                 "Hancke-Trapez", "Mira-Kegel" }),
             1));
     allQuestions.add(new Question(
-        "Welche Tiere werden vor allem in Nordamerika vom meist toedlich verlaufenden White-Nose-Syndrom befallen?",
+        "Welche Tiere werden vor allem in Nordamerika vom meist toedlich verlaufenden "
+        + "White-Nose-Syndrom befallen?",
         15, Arrays.asList(new String[] { "Fledermaeuse", "Maeusebussarde", "Waldmeisen",
             "Ameisenbaeren" }),
         3));
@@ -400,12 +424,18 @@ public class Game {
   void start() {
 
     String welcomeText = "Herzlich Willkommen bei \"Wer wird Millionaer\"!";
-    String tutorialText = "Bei diesem Spiel geht es darum einen möglichst hohen Geldbetrag zu gewinnen. Dafür musst du Fragen beantworten, die im Schwierigkeitsgrad ansteigen. \n"
-        + "Dir wird in jedem Schwierigkeitsgrad eine Frage und die vier dazu gehörigen Antwortmöglichkeiten angezeigt. \n"
-        + "Um eine Antwortmöglichkeit zu wählen, gebe den Buchstaben, der vor der jeweiligen Antwort steht ein. \n"
-        + "Waehlst du die richtige Antwort, steigt der gewonnene Geldbetrag, aber auch der Schwiergkeitsgrad an. \n"
-        + "Waehlst du die falsche Antwort, fällst du auf eine der Sicherheitsstufen zurück und gewinnst nur den den Wert der Sicherheitsstufe (500€ oder 16000€) \n"
-        + "Um das zu verhindern kannst du das Spiel durch Eingeben von \"q\" verlassen, um den Geldbetrag der zuletzt richtig beantworteten Frage zu behalten. \n"
+    String tutorialText = "Bei diesem Spiel geht es darum einen möglichst hohen Geldbetrag zu "
+        + "gewinnen. Dafür musst du Fragen beantworten, die im Schwierigkeitsgrad ansteigen. \n"
+        + "Dir wird in jedem Schwierigkeitsgrad eine Frage und die vier dazu gehörigen "
+        + "Antwortmöglichkeiten angezeigt. \n"
+        + "Um eine Antwortmöglichkeit zu wählen, gebe den Buchstaben, der vor der jeweiligen"
+        + "Antwort steht ein. \n"
+        + "Waehlst du die richtige Antwort, steigt der gewonnene Geldbetrag, aber auch der "
+        + "Schwiergkeitsgrad an. \n"
+        + "Waehlst du die falsche Antwort, fällst du auf eine der Sicherheitsstufen zurück und "
+        + "gewinnst nur den den Wert der Sicherheitsstufe (500€ oder 16000€) \n"
+        + "Um das zu verhindern kannst du das Spiel durch Eingeben von \"q\" verlassen, um den "
+        + "Geldbetrag der zuletzt richtig beantworteten Frage zu behalten. \n"
         + "Bist du bereit? Dann druecke bitte die Taste \"j\".";
 
     showMessage(welcomeText);
@@ -413,7 +443,8 @@ public class Game {
     String name = getName();
 
     String askShouldShowTutorial = "Hallo " + name
-        + ", bist du bereit? Wenn du ein kleines Tutorial brauchst, druecke bitte die Taste \"j\". Ansonsten geht es mit \"n\" mit der ersten Frage los!";
+        + ", bist du bereit? Wenn du ein kleines Tutorial brauchst, druecke bitte die Taste \"j\". "
+        + "Ansonsten geht es mit \"n\" mit der ersten Frage los!";
     showMessage(askShouldShowTutorial);
 
     boolean showTutorial = getYesNoFromUser();
@@ -440,12 +471,13 @@ public class Game {
       int userAnswer = getUserAnswer();
       int quit = 4;
       if (userAnswer == currentQuestion.getCorrectAnswer()) {
-        if (currentDifficulty == 15)
+        if (currentDifficulty == 15) {
           System.out.println(
               "Herzlichen Glueckwunsch! Du bist jetzt ein virtueller Millionaer.");
-        else
+        } else {
           System.out.println("Deine Antwort war richtig! Die gewonnene Summe liegt bei "
               + cashPrizes[currentDifficulty - 1] + "€.");
+        }  
       } else if (userAnswer == quit) {
         System.out.println("Du hast aufgegeben! Die gewonnene Summe liegt bei "
             + cashPrizes[currentDifficulty - 2] + "€.");
@@ -538,18 +570,19 @@ public class Game {
     for (int i = 0; i < currentAnswers.size(); i++) {
 
       switch (i) {
-      case 0:
-        System.out.println("A: " + currentAnswers.get(i));
-        break;
-      case 1:
-        System.out.println("B: " + currentAnswers.get(i));
-        break;
-      case 2:
-        System.out.println("C: " + currentAnswers.get(i));
-        break;
-      case 3:
-        System.out.println("D: " + currentAnswers.get(i));
-        break;
+        case 0:
+          System.out.println("A: " + currentAnswers.get(i));
+          break;
+        case 1:
+          System.out.println("B: " + currentAnswers.get(i));
+          break;
+        case 2:
+          System.out.println("C: " + currentAnswers.get(i));
+          break;
+        case 3:
+          System.out.println("D: " + currentAnswers.get(i));
+          break;
+        //default:
       }
 
     }
@@ -564,51 +597,51 @@ public class Game {
       System.out.println("Bitte gib deine Antwort ein: ");
       userInput = scan.nextLine().charAt(0);
       switch (userInput) {
-      case 'a':
-        answerIndex = 0;
-        inputValid = true;
-        break;
-      case 'b':
-        answerIndex = 1;
-        inputValid = true;
-        break;
-      case 'c':
-        answerIndex = 2;
-        inputValid = true;
-        break;
-      case 'd':
-        answerIndex = 3;
-        inputValid = true;
-        break;
-      case 'q':
-        answerIndex = 4;
-        inputValid = true;
-        break;
-      case 'A':
-        answerIndex = 0;
-        inputValid = true;
-        break;
-      case 'B':
-        answerIndex = 1;
-        inputValid = true;
-        break;
-      case 'C':
-        answerIndex = 2;
-        inputValid = true;
-        break;
-      case 'D':
-        answerIndex = 3;
-        inputValid = true;
-        break;
-      case 'Q':
-        answerIndex = 4;
-        inputValid = true;
-        break;
-      default:
-        answerIndex = -1;
-        inputValid = false;
-        break;
-      }
+        case 'a':
+          answerIndex = 0;
+          inputValid = true;
+          break;
+        case 'b':
+          answerIndex = 1;
+          inputValid = true;
+          break;
+        case 'c':
+          answerIndex = 2;
+          inputValid = true;
+          break;
+        case 'd':
+          answerIndex = 3;
+          inputValid = true;
+          break;
+        case 'q':
+          answerIndex = 4;
+          inputValid = true;
+          break;
+        case 'A':
+          answerIndex = 0;
+          inputValid = true;
+          break;
+        case 'B':
+          answerIndex = 1;
+          inputValid = true;
+          break;
+        case 'C':
+          answerIndex = 2;
+          inputValid = true;
+          break;
+        case 'D':
+          answerIndex = 3;
+          inputValid = true;
+          break;
+        case 'Q':
+          answerIndex = 4;
+          inputValid = true;
+          break;
+        default:
+          answerIndex = -1;
+          inputValid = false;
+          break;
+        }
 
     }
     return answerIndex;
