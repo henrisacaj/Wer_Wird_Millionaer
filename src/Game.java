@@ -582,7 +582,8 @@ public class Game {
         case 3:
           System.out.println("D: " + currentAnswers.get(i));
           break;
-        //default:
+        default:
+          break;
       }
 
     }
@@ -641,7 +642,7 @@ public class Game {
           answerIndex = -1;
           inputValid = false;
           break;
-        }
+      }
 
     }
     return answerIndex;
